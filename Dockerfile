@@ -13,6 +13,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     build-essential \
 	snmp \
 	snmp-mibs-downloader \
+	libglib2.0-0 \
  && make -C /usr/src/rootfs_prefix/ \
  && apt-get -yq --purge remove build-essential \
  && apt-get -yq autoremove \
