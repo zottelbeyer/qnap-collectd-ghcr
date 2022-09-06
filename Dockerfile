@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bullseye
 
 COPY rootfs_prefix/ /usr/src/rootfs_prefix/
 COPY sources.list.d/nonfree.list /etc/apt/sources.list.d/nonfree.list
